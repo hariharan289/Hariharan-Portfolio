@@ -11,7 +11,7 @@ export class ContactComponent {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
   
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_d72gh3s', 'template_aweymin', form, 'ga0wkCdSf-LcBDaKB')
       .then((result) => {
         alert('Email sent!');
         form.reset();
