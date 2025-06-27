@@ -1,0 +1,11 @@
+<div class="contact-section fade-in">
+    <h2 style="color:antiquewhite">Contact Me</h2>
+    <p style="color:antiquewhite">You can reach out to me by filling the form below 👇</p>
+
+    <form class="contact-form" (submit)="sendEmail($event)">
+        <input type="text" name="from_name" ngModel placeholder="Your Name" required>
+        <input type="email" name="from_email" ngModel placeholder="Your Email" required>
+        <textarea rows="5" name="message" ngModel placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>

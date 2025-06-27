@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background: black;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.background-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('assets/67443.jpg'); */
+    /* adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    /* Optional: make background dim */
+}
+
+.nav-bar {
+    height: 60px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+
+.app-content {
+    z-index: 1;
+    position: relative;
+}
